@@ -59,14 +59,14 @@ class StudentGrades
     {
         for (int i = 0; i < studentIDs.Length; i++)
         {
-            if (studentIDs[i] == 0) // Empty spot found
+            if (studentIDs[i] == 0)
             {
-                Console.Write("Enter StudentID: ");
+                Console.Write("Enter StudentID( only numbers) : ");
                 if (int.TryParse(Console.ReadLine(), out studentIDs[i]))
                 {
                     Console.Write("Enter Name: ");
                     names[i] = Console.ReadLine();
-                    Console.Write("Enter Grade: ");
+                    Console.Write("Enter Grade( only numbers) : ");
                     if (int.TryParse(Console.ReadLine(), out grades[i]))
                     {
                         Console.WriteLine("Student added successfully.");
